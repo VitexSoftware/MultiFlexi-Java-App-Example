@@ -1,0 +1,33 @@
+{
+    "image": "",
+    "description": "Java App Example for AbraFlexi",
+    "executable": "java",
+    "setup": "",
+    "cmdparams": "-jar app.jar",
+    "deploy": "apt install abraflexi-java-app-example",
+    "homepage": "https://github.com/VitexSoftware/MultiFlexi-Java-App-Example",
+    "uuid": "d4b3fdf8-98ce-442c-bb25-e5f91965a08b",
+    "topics": "Java,App,Example",
+    "requirements": "",
+    "environment": {
+        "EASE_LOGGER": {
+            "type": "string",
+            "description": "write log messages using",
+            "defval": "console|syslog",
+            "required": false
+        },
+        "APP_DEBUG": {
+            "type": "checkbox",
+            "description": "Show debug messages",
+            "defval": "False",
+            "required": true
+        },
+        "RESULT_FILE": {
+            "type": "string",
+            "description": "write output json data to",
+            "defval": "java-example_report.json",
+            "required": false
+        }
+    },
+    "multiflexi": ""
+}
