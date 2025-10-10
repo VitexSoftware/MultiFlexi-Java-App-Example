@@ -1,33 +1,46 @@
 {
-    "image": "",
-    "description": "Java App Example for AbraFlexi",
-    "executable": "java",
-    "setup": "",
-    "cmdparams": "-jar app.jar",
-    "deploy": "apt install abraflexi-java-app-example",
-    "homepage": "https://github.com/VitexSoftware/MultiFlexi-Java-App-Example",
+    "$schema": "https://raw.githubusercontent.com/VitexSoftware/php-vitexsoftware-multiflexi-core/refs/heads/main/multiflexi.app.schema.json",
+    "schemaVersion": "3.0.0",
     "uuid": "d4b3fdf8-98ce-442c-bb25-e5f91965a08b",
-    "topics": "Java,App,Example",
-    "requirements": "",
+    "name": "",
+    "description": {
+        "en": "Java App Example for AbraFlexi",
+        "cs": "Java App Example for AbraFlexi"
+    },
+    "tags": "Java,App,Example",
+    "homepage": "https://github.com/VitexSoftware/MultiFlexi-Java-App-Example",
+    "image": "",
+    "executable": "java",
     "environment": {
         "EASE_LOGGER": {
             "type": "string",
-            "description": "write log messages using",
+            "description": {
+                "en": "write log messages using",
+                "cs": "write log messages using"
+            },
             "defval": "console|syslog",
-            "required": false
+            "required": false,
+            "category": "Behavior"
         },
         "APP_DEBUG": {
             "type": "checkbox",
-            "description": "Show debug messages",
+            "description": {
+                "en": "Show debug messages",
+                "cs": "Show debug messages"
+            },
             "defval": "False",
-            "required": true
+            "required": true,
+            "category": "Behavior"
         },
         "RESULT_FILE": {
             "type": "string",
-            "description": "write output json data to",
+            "description": {
+                "en": "write output json data to",
+                "cs": "write output json data to"
+            },
             "defval": "java-example_report.json",
-            "required": false
+            "required": false,
+            "category": "Other"
         }
-    },
-    "multiflexi": ""
+    }
 }
