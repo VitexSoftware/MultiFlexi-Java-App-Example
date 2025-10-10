@@ -9,7 +9,6 @@
     },
     "tags": "Java,App,Example",
     "homepage": "https://github.com/VitexSoftware/MultiFlexi-Java-App-Example",
-    "image": "",
     "executable": "java",
     "environment": {
         "EASE_LOGGER": {
