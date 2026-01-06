@@ -1,45 +1,45 @@
 {
-    "$schema": "https://raw.githubusercontent.com/VitexSoftware/php-vitexsoftware-multiflexi-core/refs/heads/main/multiflexi.app.schema.json",
-    "schemaVersion": "3.0.0",
-    "uuid": "d4b3fdf8-98ce-442c-bb25-e5f91965a08b",
-    "name": "",
-    "description": {
-        "en": "Java App Example for AbraFlexi",
-        "cs": "Java App Example for AbraFlexi"
+  "$schema": "https://raw.githubusercontent.com/VitexSoftware/php-vitexsoftware-multiflexi-core/refs/heads/main/multiflexi.app.schema.json",
+  "schemaVersion": "3.2.1",
+  "uuid": "d4b3fdf8-98ce-442c-bb25-e5f91965a08b",
+  "name": "",
+  "description": {
+    "en": "Java App Example for AbraFlexi",
+    "cs": "Java App Example for AbraFlexi"
+  },
+  "tags": "Java,App,Example",
+  "homepage": "https://github.com/VitexSoftware/MultiFlexi-Java-App-Example",
+  "executable": "java",
+  "environment": {
+    "EASE_LOGGER": {
+      "type": "string",
+      "description": {
+        "en": "write log messages using",
+        "cs": "write log messages using"
+      },
+      "defval": "console|syslog",
+      "required": false,
+      "category": "Behavior"
     },
-    "tags": "Java,App,Example",
-    "homepage": "https://github.com/VitexSoftware/MultiFlexi-Java-App-Example",
-    "executable": "java",
-    "environment": {
-        "EASE_LOGGER": {
-            "type": "string",
-            "description": {
-                "en": "write log messages using",
-                "cs": "write log messages using"
-            },
-            "defval": "console|syslog",
-            "required": false,
-            "category": "Behavior"
-        },
-        "APP_DEBUG": {
-            "type": "checkbox",
-            "description": {
-                "en": "Show debug messages",
-                "cs": "Show debug messages"
-            },
-            "defval": "False",
-            "required": true,
-            "category": "Behavior"
-        },
-        "RESULT_FILE": {
-            "type": "string",
-            "description": {
-                "en": "write output json data to",
-                "cs": "write output json data to"
-            },
-            "defval": "java-example_report.json",
-            "required": false,
-            "category": "Other"
-        }
+    "APP_DEBUG": {
+      "type": "bool",
+      "description": {
+        "en": "Show debug messages",
+        "cs": "Show debug messages"
+      },
+      "defval": false,
+      "required": true,
+      "category": "Behavior"
+    },
+    "RESULT_FILE": {
+      "type": "string",
+      "description": {
+        "en": "write output json data to",
+        "cs": "write output json data to"
+      },
+      "defval": "java-example_report.json",
+      "required": false,
+      "category": "Other"
     }
+  }
 }
