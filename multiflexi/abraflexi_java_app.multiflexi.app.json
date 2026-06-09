@@ -1,6 +1,6 @@
 {
   "$schema": "https://raw.githubusercontent.com/VitexSoftware/php-vitexsoftware-multiflexi-core/refs/heads/main/multiflexi.app.schema.json",
-  "schemaVersion": "3.2.1",
+  "schemaVersion": "3.4.0",
   "uuid": "d4b3fdf8-98ce-442c-bb25-e5f91965a08b",
   "name": "",
   "description": {
@@ -10,6 +10,13 @@
   "tags": "Java,App,Example",
   "homepage": "https://github.com/VitexSoftware/MultiFlexi-Java-App-Example",
   "executable": "java",
+  "events": {
+    "emits": {
+      "report.generated": {
+        "description": "A report was generated"
+      }
+    }
+  },
   "environment": {
     "EASE_LOGGER": {
       "type": "string",
